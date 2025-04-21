@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Salary Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        header h1 {
+            color: white;
+        }
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .chart-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .interactive {
+            margin: 20px 0;
+            height: 600px;
+            border: none;
+            width: 100%;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Teacher Salary Analysis</h1>
+            <p>An in-depth analysis of teacher salaries across different countries, education levels, and experience levels</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="section">
+            <h2>Introduction</h2>
+            <p>This report presents an analysis of teacher salaries across different countries, education levels, and experience levels based on OECD data. The analysis provides insights into salary variations, progression patterns, and comparative statistics.</p>
+        </div>
+        
+        <div class="section">
+            <h2>1. Teacher Salaries by Country</h2>
+            <p>The chart below shows the top 20 countries by average teacher salary in USD PPP (Purchasing Power Parity). This allows for a fair comparison of teacher compensation across different economies.</p>
+            <div class="chart-container">
+                <img src="teacher_salary_by_country.png" alt="Teacher Salaries by Country">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>2. Salary Progression by Experience Level</h2>
+            <p>This analysis examines how teacher salaries progress with experience, from starting salary to maximum salary. The chart shows the salary trajectory for the top 10 highest-paying countries.</p>
+            <div class="chart-container">
+                <img src="salary_progression_by_experience.png" alt="Salary Progression by Experience">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>3. Salary Comparison by Education Level</h2>
+            <p>This chart compares average teacher salaries across different education levels, from pre-primary to upper secondary education. It highlights how compensation varies based on the level of education being taught.</p>
+            <div class="chart-container">
+                <img src="salary_by_education_level.png" alt="Salary by Education Level">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>4. Salary Distribution by Country (Interactive)</h2>
+            <p>The interactive chart below shows the distribution of teacher salaries across different countries. You can hover over the data points to see detailed information.</p>
+            <div class="chart-container">
+                <iframe class="interactive" src="salary_distribution.html" frameborder="0"></iframe>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>5. Correlation Between Education Level and Salary</h2>
+            <p>The heatmap below shows the relationship between education levels and teacher salaries across different countries. Darker colors indicate higher salaries.</p>
+            <div class="chart-container">
+                <img src="salary_heatmap_by_education.png" alt="Salary Heatmap by Education Level">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Conclusion</h2>
+            <p>The analysis reveals significant variations in teacher salaries across countries, education levels, and experience levels. Generally, salaries increase with experience and higher education levels. Countries with stronger economies tend to offer higher compensation for teachers, but there are notable exceptions that suggest policy and cultural factors also play important roles in determining teacher compensation.</p>
+            <p>For a more detailed analysis, please refer to the PDF report or the Jupyter notebook.</p>
+            <p><a href="teacher_salary_analysis_report.pdf" target="_blank">Download PDF Report</a> | <a href="teacher_salary_analysis.ipynb" target="_blank">View Jupyter Notebook</a></p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Teacher Salary Analysis Report | Generated on 2025-04-21</p>
+        </div>
+    </footer>
+</body>
+</html>
